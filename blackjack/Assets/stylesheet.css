@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: green;
+    color: white;
+    text-shadow: black 0 0 2px;
+    font-size: 36px;
+}
+h1{
+    color: blue;
+    font-size: 3rem;
+}
+p {
+    height: 4rem;
+}
+button {
+    width: 15%;
+    height: 3rem;
+    margin: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: aliceblue;
+    
+}

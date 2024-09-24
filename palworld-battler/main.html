@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PalWorld Battler</title>		
+
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
+	</head>
+    <body>        
+        <section id="pickYourPalPage">
+            <div>
+                <img class="backgroundImg" src="assets/Images/mainBG.png" alt="palworld background"/>
+            </div>
+            <div class="pals">
+                <img class="starterPals" src="assets/Images/foxparksLeft.png">
+                <img class="starterPals" src="assets/Images/lifmunkLeft.png">
+                <img class="starterPals" src="assets/Images/pengulletLeft.png">
+            </div>
+            <h1>Choose your pal!</h1>
+        </section>        
+        <div id="toHideBattle" hidden>
+            <section id="palBattlePage">
+                <div> 
+                    <img class="backgroundImg" src="assets/Images/battleBG.png" >
+                </div>
+                <div id="battlingPals">
+                    <img id="yourPal" src="assets/Images/pengulletLeft.png">
+                    <img id="theirPal" src="assets/Images/foxparksRight.png">
+                </div>
+                <div class="palInfo">
+                    <div class="yourPalInfo"> 
+                        <div>                   
+                            <label for="yourPalHP">HP::</label>
+                            <progress id="yourPalHP" value="100" max="100">100</progress>
+                        </div>
+                        <div class="palMoves">
+                            <span class="button" id="attackBTN">Attack</span>
+                            <span class="button" id="healBTN">Heal</span>
+                        </div>
+                    </div>
+                    <div class="theirPalInfo">
+                        <label for="theirPalHP">HP::</label>
+                        <progress id="theirPalHP" value="100" max="100">100</progress>
+                    </div>
+                </div>
+                <p id="battleInfo">Let the battle begin!</p>
+                <p id="nextBTN" hidden>Their Turn</p>            
+            </section>
+        </div>
+        <div id='gameOverScreen' hidden>
+            <p id="deathSummaryText"></p>
+            <p class="button" id="startOverBTN">Start Over</p>
+        </div>
+    </body>
+    <!--jquery imports -->
+	<script src="assets/script.js"></script>
+</html>
